@@ -78,7 +78,7 @@ def connect_to_gsheet():
         
         # ##### ATUALIZADO: Planilha 'formularios_pessoais', Aba 'instrumento_lifenergy' #####
         spreadsheet = gc.open("formularios_pessoais") 
-        return spreadsheet.worksheet("instrumento_lifenergy") 
+        return spreadsheet.worksheet("projetos_trabalho") 
     except Exception as e:
         st.error(f"Erro ao conectar com o Google Sheets: {e}")
         return None
